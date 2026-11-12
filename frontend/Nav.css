@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Top Header */
+
+.top-header {
+    width: 100%;
+    min-height: 42px;
+    background-color: #063f46;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6%;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.top-left,
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* Main Navbar */
+
+.navbar {
+    width: 100%;
+    min-height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo h2 {
+    color: #087f8c;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+.logo p {
+    color: #555;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 3px;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0796a5;
+}
+
+
+/* Navbar Buttons */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-btn {
+    padding: 12px 22px;
+    background-color: transparent;
+    border: 1px solid #078b98;
+    color: #078b98;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #078b98;
+    color: white;
+}
+
+.appointment-btn {
+    padding: 13px 22px;
+    background-color: #078b98;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.appointment-btn:hover {
+    background-color: #05636d;
+    transform: translateY(-2px);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .top-left,
+    .top-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+    .nav-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .login-btn,
+    .appointment-btn {
+        width: 100%;
+    }
+}
+
+
+/* Make Header and Navbar Full Browser Width */
+
+.top-header {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+}
+
+.navbar {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Prevent horizontal scrolling */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.top-right a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.top-right a:hover {
+    color: #087f8c;
+}

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.appointment-page {
+    min-height: 100vh;
+    width: 100%;
+    background: #f2f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.appointment-container {
+    width: 100%;
+    max-width: 850px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(20, 70, 100, 0.10);
+}
+
+.appointment-container h1 {
+    color: #123b5d;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.appointment-container p {
+    color: #718096;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.appointment-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.appointment-container input,
+.appointment-container select,
+.appointment-container textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #d6e2eb;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: #fbfdff;
+    color: #263747;
+    transition: 0.3s;
+}
+
+.appointment-container input:focus,
+.appointment-container select:focus,
+.appointment-container textarea:focus {
+    border-color: #1687c9;
+    box-shadow: 0 0 0 3px rgba(22, 135, 201, 0.10);
+}
+
+.appointment-container textarea {
+    grid-column: span 2;
+    min-height: 110px;
+    resize: vertical;
+}
+
+.appointment-container button {
+    grid-column: span 2;
+    padding: 15px;
+    background: #087db5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.appointment-container button:hover {
+    background: #075f8a;
+    transform: translateY(-2px);
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+    .appointment-page {
+        padding: 25px 12px;
+    }
+    .appointment-container {
+        padding: 25px 18px;
+    }
+    .appointment-container h1 {
+        font-size: 24px;
+    }
+    .appointment-container form {
+        grid-template-columns: 1fr;
+    }
+    .appointment-container textarea,
+    .appointment-container button {
+        grid-column: span 1;
+    }
+}
+
+.appointment-page {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f2f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 30px;
+    box-sizing: border-box;
+}

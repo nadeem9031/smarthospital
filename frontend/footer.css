@@ -1,0 +1,96 @@
+.footer {
+    width: 100%;
+    background: #063f46;
+    color: white;
+    padding: 55px 7% 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-section h2 {
+    font-size: 23px;
+    color: #ff9b42;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: #ff9b42;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #d5e5e5;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 13px;
+    font-size: 14px;
+    color: #d5e5e5;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #d5e5e5;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff9b42;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    color: #d5e5e5;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .footer {
+        padding: 40px 6% 0;
+    }
+}
+
+.team-role {
+    display: block;
+    font-size: 12px;
+    color: #a9c5c5;
+    margin-top: 4px;
+}
+
+.footer-section ul li a:hover {
+    color: #ff9b42;
+}
